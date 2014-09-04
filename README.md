@@ -1,0 +1,1 @@
+Uses jquery to get information about a users repositories from the github API using AJAX and JSONP. Inside the JSONP callback function it figures out what the favourite language is for that user and displays a helpful message.
