@@ -1,0 +1,19 @@
+.medium-padding-right {
+    padding-right: 10px;
+}
+.user-info {
+    background-color: #f8f8f8;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.user-message {
+    padding-right: 5px;
+}
+.all-info {
+    background-color: #f8f8f8;
+}
