@@ -37,7 +37,7 @@
         // A hash of language to count
         var languages = {};
         // Loop through the repositories and keep track of the language count
-        if (response.data) {
+        if (response.data.length !== 0) {
             $.each(response.data, function(index, repo) {
                 if (!repo.private) {
                     if (repo.language != null) {
@@ -55,7 +55,11 @@
                 highestValue = value;
             }
         });
-	$("#favourite-language").html("Your favourite language is <mark>" + highestLanguage + "</mark>");
+        if (highestLanguage != null) {
+            $("#favourite-language").html("Your favourite language is <mark>" + highestLanguage + "</mark>");
+        } else {
+            $("#favourite-language").html("Couldn't find one. Sorry.");
+        }
     }
 </script>
 
