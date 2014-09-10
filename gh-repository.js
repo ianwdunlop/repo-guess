@@ -57,6 +57,8 @@ thetravellingbard.GithubRepo.prototype.favouriteLanguage = function(repositories
     // A hash of language to count
     var languages = {};
     // Loop through the repositories and keep track of the language count
+    // If there is no user then the repositories.data.message is "Not found", still a 200 though
+    // However, repositories.data is not an array so length is 'undefined'
     if (repositories.data.length !== 0) {
         $.each(repositories.data, function(index, repo) {
             if (!repo.private) {
