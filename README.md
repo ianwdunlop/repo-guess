@@ -1,5 +1,6 @@
 # What's your favourite language?
-Uses jquery to get information about a users repositories from the github API using AJAX and JSONP. The response data is then processed to figure out what the favourite language is for that user and displays a helpful message.
+Uses jquery to get information about a users repositories from the github API using AJAX and JSONP. The response data is then processed to figure out what the favourite language is for that user and displays a helpful message.  
+Try it [here](http://ianwdunlop.github.io/repo-guess/ "Live version of the code").
 
 ## Testing
 
